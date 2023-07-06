@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-position: center; 
+    background-size: cover;
+    background-image: linear-gradient(
+        to left,
+        rgba(148, 217, 235, 0.5),
+        rgba(74, 31, 126, 0.5)
+      ), url("img/GRIETA.png");
+    position: relative;
+    align-items: center;
+    
+}
+
+p{
+    font-family: "Roboto";
+    color: #FFF;
+    text-shadow:2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+button {
+    background: linear-gradient(rgba(185, 185, 240, 0.5), rgb(219, 136, 198));
+    padding: 10 10;
+    border: none;
+    
+}
+
+.img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.box {
+    display: grid;
+    background-image: linear-gradient(
+        to left,
+        rgba(11, 61, 73, 0.5),
+        rgba(74, 31, 126, 0.5)
+      ), url("img/aram.jpg");
+    width: 700;
+    height: 1000;
+    margin: 0 auto;
+    background-position: center; 
+    background-size: cover;
+
+}
+
+
+.contenedorImg{
+    border-radius: 50%;
+    width: 170;
+    height: 170;
+    position: relative;
+    background-color: rgb(243, 243, 243);  
+}
+
+.bordeContenedorImg{
+    display: flex;
+    position: relative;
+    border-radius: 50%;
+    width: 200;
+    height: 200;
+    background: linear-gradient(rgba(18, 18, 19,0.5), rgb(17, 3, 80));
+    align-items:  last baseline;
+    align-content: right;
+    box-shadow: 30 30 black;
+    z-index: 500;
+}
+
+
+.contenedorImgHabQ{  
+    border-radius: 50%;
+    width: 60;
+    height: 60;
+    position: relative;
+    background-image: url("img/Q.png");
+    background-repeat: no-repeat;
+}
+
+.contenedorImgHabW{  
+    border-radius: 50%;
+    width: 60;
+    height: 60;
+    position: relative;
+    background-image: url("img/W.png");
+    background-repeat: no-repeat;
+}
+.contenedorImgHabE{  
+    border-radius: 50%;
+    width: 60;
+    height: 60;
+    position: relative;
+    background-image: url("img/E.png");
+    background-repeat: no-repeat;
+}
+.contenedorImgHabR{  
+    border-radius: 50%;
+    width: 60;
+    height: 60;
+    position: relative;
+    background-image: url("img/R.png");
+    background-repeat: no-repeat;
+}
+
+.contenedorIconos{
+    margin: 15;
+    display: flex;
+    flex-direction: row;
+}
+.iconos{
+    border-radius: 50%;
+    width: 30;
+    height: 30;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+.iconosFooter{
+   border-radius: 20%;
+    width: 200;
+    height: 200;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+.contenedor{
+    margin: 15;
+    margin-bottom: 0;
+    padding: 10 ;
+    border-width: 10;
+    border: solid black;
+    background-color: rgba(0, 0, 0,0.5);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 640;
+    height: 120;
+ 
+    
+}
+.contenedor3{
+    margin: 15;
+    margin-bottom: 0;
+    padding: 10 ;
+    border-width: 10;
+    border: solid black;
+    background-color: rgba(0, 0, 0,0.5);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 640;
+    height: 120;
+   
+}
+.contenedor4{
+    margin: 15;
+    margin-bottom: 0;
+    padding: 10 ;
+    border-width: 10;
+    border: solid black;
+    background-color: rgba(0, 0, 0,0.5);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 640;
+    height: 120;  
+}
+.contenedor5{
+    margin: 15;
+    margin-bottom: 0;
+    padding: 10 ;
+    border-width: 10;
+    border: solid black;
+    background-color: rgba(0, 0, 0,0.5);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 640;
+    height: 120;  
+}
+
+.contenedor2{
+    padding: 10 ;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: auto;
+    height: 70%;
+}
+
+.caja{
+    position: relative;
+    padding: 10;
+    width: 80%;
+    height: 250;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    
+
+}
+
+.caja2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30;
+    padding: 10;
+    width: 40%;
+    height: auto;
+    color: white;
+    text-shadow:2px 2px 4px #FFF, 4px 4px 4px #4d0f68,
+ 6px 6px 4px #222;
+
+}
+.contenedorMain{
+    margin: 15;
+    display: flex;
+    flex-direction: row;
+}
+.contenedorMenu{
+    border-radius: 5%;
+    margin: 15;
+    margin-bottom: 0;
+    padding: 10 ;
+    border-width: 10;
+    border: solid rgb(253, 252, 252);
+    background: linear-gradient(rgba(156, 156, 216, 0.5), rgb(17, 3, 80));
+    position: relative;
+
+}
+
+
+
+
