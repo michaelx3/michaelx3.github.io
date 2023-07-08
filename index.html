@@ -181,7 +181,7 @@ function mostrarImagen() {
   imagen.src = opcionSeleccionada;
 }
 function downloadImage(){
-	 html2canvas(document.querySelector("#box"), { width: 600, height: 900 }).then(canvas => {
+	 html2canvas(document.querySelector("#box")).then(canvas => {
 		a = document.createElement('a'); 
 		document.body.appendChild(a); 
 		a.download = "test.png"; 
