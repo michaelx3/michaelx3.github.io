@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Finanzas</title>
+  <link rel="stylesheet" href="CSS/Tema1.css">
+</head>
+<body>
+  <img class="gif-left" src="img/Tiburon.gif" alt="GIF Izquierdo">
+  <img class="gif-right" src="img/Tiburon.gif" alt="GIF Derecho">
+  <div class="title-container">
+    <h1 class="game-title">Tema 1: Finanzas</h1>
+  </div>
+  <div class="board" id="board">
+    <div class="cell" onclick="handleMove(0, 0)"></div>
+    <div class="cell" onclick="handleMove(0, 1)"></div>
+    <div class="cell" onclick="handleMove(0, 2)"></div>
+    <div class="cell" onclick="handleMove(1, 0)"></div>
+    <div class="cell" onclick="handleMove(1, 1)"></div>
+    <div class="cell" onclick="handleMove(1, 2)"></div>
+    <div class="cell" onclick="handleMove(2, 0)"></div>
+    <div class="cell" onclick="handleMove(2, 1)"></div>
+    <div class="cell" onclick="handleMove(2, 2)"></div>
+  </div>
+  <button onclick="resetBoard()">Reiniciar partida</button>
+  <button onclick="window.location.href='indexTic.html'">Regresar al menu</button>
+  <div id="result-message" class="result-message"></div>
+  <script src="JS/Tema1.js"></script>
+</body>
+</html>

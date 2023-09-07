@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TIC TAC TOE Finanzas</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #87CEEB;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        .title-container {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            color: navy;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .title2 {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            color: navy;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .title-gif {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .button1,
+        .button2,
+        .button3 {
+            display: block;
+            width: 200px;
+            height: 40px;
+            margin: 10px;
+            background-color: dodgerblue;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .button1:hover,
+        .button2:hover,
+        .button3:hover {
+            background-color: royalblue;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <h1 class="title">TIC TAC TOE</h1>
+        <h2 class="title2">Finanzas</h2>
+        <img class="title-gif" src="img/TituloF.gif" alt="Fondo del título">
+    </div>
+    <div class="container">
+        <button class="button1" onclick="window.location.href='Tema1.html'">Tema: Finanzas 1</button>
+        <button class="button2" onclick="window.location.href='Tema2.html'">Tema: Finanzas 2</button>
+        <button class="button3" onclick="window.location.href='Tema3.html'">Tema: Finanzas 3</button>
+    </div>
+</body>
+</html>
