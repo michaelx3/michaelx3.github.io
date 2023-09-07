@@ -1,0 +1,292 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contenedorBotonActual{
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    border-color: #ffffff;
+    background-image: url("img/efectoBurbuja.gif");
+    background-repeat: no-repeat;
+    background-color: rgba(16, 46, 180,1);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    /*box-shadow: 0px 0.2em  #007BD8; */
+    font-family: "Roboto";
+    text-align: center;
+    border-width: 20 px ;
+    box-shadow: 0 0 10px 0px  #000000;
+ 
+    text-shadow: -2px -2px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
+  
+ }
+body{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 164, 240, 0.5),
+        rgba(53, 109, 230, 0.5)
+      ), url("img/fondo.jpg")  
+}
+
+.swal-modal .swal-text {
+    text-align: center;
+}
+
+.swal-modal{
+    background-color: rgba(16, 43, 100, 0.8);
+    color: #ffffff;
+}
+
+.swal-title {
+    color: #ffffff; 
+}
+
+.swal-text{
+    font-family: "Roboto";
+    color: #ffffff;
+}
+
+img{
+    display:inline-block;
+}
+
+#nivel{
+    background-color: #051A37;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    box-shadow: 2px 4px 8px rgb(89 73 100); 
+    }
+
+h1{
+    background-color: rgba(130, 230, 230, 0.6);
+    padding-left: 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Oswald';
+    font-size: 40px; 
+    color: white;
+    text-shadow: -2px -2px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);   
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    padding: 0.1 0.1 0;
+}
+
+p{
+    padding: 10;
+    text-align: center;
+    background-color: #0a1063;
+}
+
+.contenedorBoton{
+   width: 90%;
+   height: auto;
+   border-radius: 10px;
+   border-color: #ffffff;
+   background-image: url("img/efectoBurbuja.gif");
+   background-repeat: no-repeat;
+   background-color: rgba(255, 255, 255, 0.5);
+   color: #ffffff;
+   text-align: center;
+   padding: 10px;
+   /*box-shadow: 0px 0.2em  #007BD8; */
+   font-family: "Roboto";
+   text-align: center;
+   border-width: 20 px ;
+   box-shadow: 0 0 10px 0px  #000000;
+
+   text-shadow: -2px -2px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
+ 
+}
+
+.container{
+    width:auto;
+    height: auto;
+    position: relative;
+    background-color:rgba(0, 0, 0, 0.3);
+    border-style: solid;
+    border-width: 3px;
+    border-image: url("img/bordeSlider.gif") 10  stretch;  
+   /* border-image: linear-gradient(45deg, rgb(143, 55, 0), rgb(66, 228, 250)) 1;*/
+}
+
+.contenedorCabecera{
+    width: 100%;
+    height: 10%;
+    background-image: url("img/efectoBurbuja.gif");
+    background-color:rgba(0, 0, 0, 0.5);
+    font-family: "Roboto";
+    color: #ffffff;
+}
+
+.contenedorJuego{
+   display: flex;
+   flex-direction: row;
+}
+
+.columnaIzquierda{
+    width: 85%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.columnaDerecha{
+    width: 15%;
+    height: auto;
+    border-width: 10px;
+    /*box-shadow: 0 0 10px 0px  #000000*/
+}
+
+.container2 {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 164, 240, 0.5),
+        rgba(53, 109, 230, 0.5)
+      ), url("img/fondo.jpg");  
+  }
+
+.anotherCaja{
+    margin: 10px 10px 15px 30px;
+    display: flex;
+    width: 300px;
+    height: 43px;
+    align-items: center;
+    justify-content: center;
+    background-image: url("img/fondoTextRojo.png");
+    /*background-color: white;
+    border-radius:  25px;
+    box-shadow: 0 0 0 5px  #FFEA00;*/
+    font-family: "Roboto";
+    color: white;
+    font-size: 14px;
+    flex-wrap: wrap;  
+}
+
+.cajaX{
+    width: 350px;
+    height: 250px;
+    margin: 10px 10px 40px 30px;
+    padding: 10px;
+    text-align: center;
+    overflow-y: scroll;
+    border-radius:  20px;
+    background-color: rgba(255, 255, 255, 0.50);
+    border: solid #ffffff;
+    border-width: 3px ;
+    box-shadow: 0 0 10px 0px  #000000
+   /* background-image: url("fondoVerde.png");
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*box-shadow: 20px 20px #007BD8; */
+}
+
+.cajaX::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+    display: none;
+}
+
+.cajaX::-webkit-scrollbar-track {
+  background-color: #FFEA00; /* Color de la pista de desplazamiento */
+	border-radius: 25px
+}
+
+.cajaX::-webkit-scrollbar-thumb {
+  background-color: #FFEA00; /* Color de la barra de desplazamiento */
+  border-radius: 5px; /* Borde redondeado de la barra de desplazamiento */
+}
+
+.arrow{
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    position: absolute;
+    bottom: calc(50% - 10px);
+    z-index: 3;
+    cursor: pointer;
+    /*border-radius: 20px;*/
+    text-align: center;
+    line-height: 20px;
+    font-size: 10px;
+    color: #71CAEB; 
+    transition: opacity 0.5s ease;
+}
+
+#left-arrow{
+    left: calc(50% - 200px);
+    background-image: url("img/arrow-left.png");
+}
+
+#right-arrow{
+    right: calc(50% - 200px);
+    background-image: url("img/arrow-rigth.png");
+}
+
+.slider{
+    width: 100%;
+    height: auto;
+    /* We need a padding left 
+    so that the elements will be centered at all times*/
+    padding-left: 40%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden ;
+    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+}
+
+.slider::-webkit-scrollbar{
+     display: none;
+}
+
+.box{
+    /* scroll-snap-align is very important
+    , it will help us figure out where is the center of every box*/
+    scroll-snap-align: center;
+    width: 150 px;
+    /* Important!! min-width tells my slider it can not
+     resize my elements to fit, it has to do scroll*/
+    min-width:150 px;
+    height: 100 px;
+    margin: 25px;
+    position: relative;
+    z-index: 1;
+    /*border-radius:  8px;
+    box-shadow: 2px 4px 8px rgb(89 73 100);*/
+    border-style: solid;
+    border-width: 32px;
+    border-image: url("img/borde.png") 30 30 stretch;
+    transition: opacity 0.3s ease-in;
+    opacity: 1;
+    text-align: center;
+}
+#center{
+    opacity: 1;
+}
+
+.dummy{
+    
+    min-width: 70%;
+    scroll-snap-align: none;
+    visibility: hidden;
+}
+
+
+footer{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

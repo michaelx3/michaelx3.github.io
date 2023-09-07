@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+      <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+      <link rel="stylesheet" href="css/juegoCuentasPasivos.css">   
+  </head>
+  <body>
+    <div class="contenedorCabecera">
+      <h1>CUENTAS DEL ESTADO DE SITUACIÓN FINANCIERA</h1>
+      <p>INSTRUCCIONES: ARRASTRA LA IMAGEN A SU CUENTA CORRESPONDIENTE</p>
+    </div>
+    <section class="container" >
+      <span id="left-arrow" class="arrow">&lsaquo;</span>
+      <span id="right-arrow" class="arrow">&rsaquo;</span>
+      <div class="slider" id="slider">
+        <div class="box" id="rentasCobradas">
+          <img alt="Rentas Cobradas"   src="img/PRC.png" />  
+        </div>
+        <div class="box center" id="impuesto">
+          <img alt="Impuestos Utilidad" src="img/P-IU.png" /> 
+        </div>
+        <div class="box center" id="interesesCobrados">
+          <img alt="Intereses" src="img/P-ICA.png" /> 
+        </div>           
+        <div class="box center" id="prestamo">
+          <img alt="Prestamo" src="img/P-PB.png" /> 
+        </div>
+        <div class="box" id="aleatorios">
+          <img id=aleatorio1 alt="aleatorios" src="" /> 
+        </div>   
+        <div class="box center" id="acreedores">
+          <img alt="Acreedores" src="img/P-AD.png" /> 
+        </div> 
+        <div class="box" id="ivaCausado">
+          <img id="IVA causado" alt="Bancos" src="img/P-IVAC.png" /> 
+        </div> 
+        <div class="box center" id="cobro">
+          <img alt="Cobro Anticipados" src="img/P-CA.png" /> 
+        </div>
+        <div class="box center" id="iva">
+          <img alt="Iva" src="img/P-IVAPC.png" /> 
+        </div>
+        <div class="box" id="aleatorios">
+          <img id=aleatorio2 alt="aleatorios" src="" /> 
+        </div>  
+        <div class="box" id="aleatorios">
+          <img id=aleatorio3 alt="aleatorios" src="" /> 
+        </div>  
+        <div class="box center" id="antiClientes">
+          <img alt="Anticipo Clientes" src="img/P-AC.png" /> 
+        </div>
+        <div class="box" id="aleatorios">
+          <img id=aleatorio4 alt="aleatorios" src="" /> 
+        </div>  
+        <div class="box" id="cuentas">
+          <img id="Cuentas por pagar" alt="Cuentas por pagar" src="img/P-CP.png" /> 
+        </div> 
+        <div class="box dummy"></div>
+      </div>
+    </section>
+    <section class="contenedorJuego">
+      <section class="columnaIzquierda">
+        <section class="container2">  
+          <div>              
+            <div class=  "anotherCaja" >ANTICIPO CLIENTES </div>
+            <div class=  "cajaX" id="antiClientes"></div>
+          </div>  
+          <div>              
+            <div class=  "anotherCaja" >RENTAS COBRADAS POR ANTICIPADO</div>
+            <div class=  "cajaX" id="rentasCobradas"> </div>
+          </div>
+          <div>              
+            <div class=  "anotherCaja" >INTERESES COBRADOS POR ANTICIPADO</div>
+            <div class=  "cajaX" id="interesesCobrados"> </div>
+          </div> 
+          <div>              
+            <div class=  "anotherCaja" >ACREEDORES DIVERSOS</div>
+            <div class=  "cajaX" id="acreedores"> </div>
+          </div>  
+          <div>              
+            <div class=  "anotherCaja" >PRÉSTAMO BANCARIO</div>
+            <div class=  "cajaX" id="prestamo"> </div>
+          </div> 
+          <div>              
+            <div class=  "anotherCaja" >COBROS ANTICIPADOS</div>
+            <div class=  "cajaX" id="cobro"> </div>
+          </div>
+          <div>              
+            <div class=  "anotherCaja" >CUENTAS POR PAGAR</div>
+            <div class=  "cajaX" id="cuentas"> </div>
+          </div>
+          <div>              
+            <div class=  "anotherCaja" >IVA POR CAUSAR O TRASLADAR</div>
+            <div class=  "cajaX" id="iva"> </div>
+          </div>
+          <div>              
+            <div class=  "anotherCaja" >IVA CAUSADO O TRASLADADO</div>
+            <div class=  "cajaX" id="ivaCausado"> </div>
+          </div>       
+        </section>
+      </section>
+      <section class="columnaDerecha"> 
+        <a href="javascript:activosCirculantes()" >
+          <div class="contenedorBoton" onmouseover="this.style.backgroundColor='rgba(0, 0, 0, 0.5)'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.5)'"> ACTIVOS CIRCULANTES</div>
+        </a>
+        <a href="javascript:activosNoCirculantes()" >
+          <div class="contenedorBoton" onmouseover="this.style.backgroundColor='rgba(0, 0, 0, 0.5)'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.5)'"> ACTIVOS NO CIRCULANTES</div>
+        </a>
+        <a href="javascript:pasivos()" >
+          <div class="contenedorBotonActual" onmouseover="this.style.backgroundColor='rgba(0, 0, 0, 0.5)'" onmouseout="this.style.backgroundColor='rgb(16, 46, 180)'"> PASIVOS </div>
+        </a>
+        <a href="javascript:capital()" >
+          <div class="contenedorBoton" onmouseover="this.style.backgroundColor='rgba(0, 0, 0, 0.5)'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.5)'"> CAPITAL CONTABLE </div>
+        </a>
+      </section>
+    </section>    
+    <script src = "js/slider.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/pasivos.js"></script>
+  </body>
+</html>

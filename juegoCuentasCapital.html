@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+      <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+      <link rel="stylesheet" href="css/juegoCuentasCapital.css">   
+  </head>
+  
+  <body>
+    <div class="contenedorCabecera">
+      <h1>CUENTAS DEL ESTADO DE SITUACIÓN FINANCIERA</h1>
+      <p>INSTRUCCIONES: ARRASTRA LA IMAGEN A SU CUENTA CORRESPONDIENTE</p>
+    </div>
+    <section class="container" >
+      <span id="left-arrow" class="arrow">&rsaquo;</span>
+      <span id="right-arrow" class="arrow">&rsaquo;</span>
+      <div class="slider" id="slider">
+        <div class="box" id="capital">
+          <img alt="Capital"   src="img/CC-CS.png" />  
+        </div>
+        <div class="box center" id="aleatorios">
+          <img id=aleatorio1 alt="Aleatorio" src="" /> 
+        </div>
+        <div class="box center" id="prima">
+          <img alt="Prima" src="img/CC-P.png" /> 
+        </div>
+        <div class="box center" id="aleatorios">
+          <img id=aleatorio2 alt="Aleatorio" src= "" /> 
+        </div>
+        <div class="box center" id="aportaciones">
+          <img alt="Aportaciones" src="img/CC-A.png" /> 
+        </div>
+        <div class="box center" id="perdida">
+          <img alt="Perdida" src="img/CC-UP.png" /> 
+        </div>
+        <div class="box center" id="aleatorios">
+          <img id=aleatorio3 alt="Aleatorio" src="" /> 
+        </div>
+        <div class="box center" id="donaciones">
+          <img alt="Donaciones" src="img/CC-D.png" /> 
+        </div>
+        <div class="box center" id="aleatorios">
+          <img id=aleatorio4 alt="Aleatorio" src="" /> 
+        </div>
+        <div class="box center" id="reserva">
+          <img alt="Reserva" src="img/CC-RL.png" /> 
+        </div>
+        <div class="box center" id="utiliades">
+          <img alt="Utiliades Anteriores" src="img/CC-U.png" /> 
+        </div>
+        <div class="box" id="aleatorios">
+          <img id=aleatorio5 alt="Aleatorio" src="" /> 
+        </div>        
+        <div class="box dummy"></div>
+      </div>
+    </section>
+    <section class="contenedorJuego">
+      <section class="columnaIzquierda">
+        <section class="container2">   
+          <div>              
+            <div class=  "anotherCaja" > CAPITAL SOCIAL</div>
+            <div class=  "cajaX" id="capital"></div>
+          </div>  
+          <div>              
+            <div class=  "anotherCaja" >APORTACIONES PARA FUTUROS AUMENTOS DE CAPITAL</div>
+            <div class=  "cajaX" id="aportaciones"> </div>
+          </div>
+          <div>              
+            <div class=  "anotherCaja" >PRIMA EN VENTA DE ACCIONES</div>
+            <div class=  "cajaX" id="prima"> </div>
+          </div>  
+          <div>              
+            <div class=  "anotherCaja" >DONACIONES</div>
+            <div class=  "cajaX" id="donaciones"> </div>
+          </div>    
+          <div>              
+            <div class=  "anotherCaja" >UTILIDADES / PÉRDIDAS DE EJERCICIOS ANTERIORES</div>
+            <div class=  "cajaX" id="utiliades"> </div>
+          </div>  
+          <div>              
+            <div class=  "anotherCaja" >RESERVA LEGAL</div>
+            <div class=  "cajaX" id="reserva"> </div>
+          </div>
+          <div>              
+            <div class=  "anotherCaja" >UTILIDAD / PÉRDIDA DEL EJERCICIO</div>
+            <div class=  "cajaX" id="perdida"> </div>
+          </div>          
+        </section>
+      </section>
+      <section class="columnaDerecha"> 
+        <a href="javascript:activosCirculantes()" >
+          <div class="contenedorBoton" onmouseover="this.style.backgroundColor='rgba(0, 0, 0, 0.5)'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.5)'"> ACTIVOS CIRCULANTES</div>
+        </a>
+        <a href="javascript:activosNoCirculantes()" >
+          <div class="contenedorBoton" onmouseover="this.style.backgroundColor='rgba(0, 0, 0, 0.5)'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.5)'"> ACTIVOS NO CIRCULANTES</div>
+        </a>
+        <a href="javascript:pasivos()" >
+          <div class="contenedorBoton" onmouseover="this.style.backgroundColor='rgba(0, 0, 0, 0.5)'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.5)'"> PASIVOS </div>
+        </a>
+        <a href="javascript:capital()" >
+          <div class="contenedorBotonActual" onmouseover="this.style.backgroundColor='rgba(0, 0, 0, 0.5)'" onmouseout="this.style.backgroundColor='rgb(16, 46, 180)'"> CAPITAL CONTABLE </div>
+        </a>
+      </section>
+    </section>    
+    <script src = "js/slider.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src = "js/capital.js"></script>
+  </body>
+</html>

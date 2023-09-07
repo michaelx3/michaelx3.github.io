@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+      <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+      <link rel="stylesheet" href="css/juegoCuentasActivosCirculantes.css"> 
+    
+  </head>
+  <body>
+    <div class="contenedorCabecera">
+      <h1>CUENTAS DEL ESTADO DE SITUACIÓN FINANCIERA</h1>
+      <p>INSTRUCCIONES: ARRASTRA LA IMAGEN A SU CUENTA CORRESPONDIENTE</p>
+    </div>
+    <section class="container" >
+      <span id="left-arrow" class="arrow" >&lsaquo;</span>
+      <span id="right-arrow" class="arrow">&rsaquo;</span>
+      <div class="slider" id="slider">
+        <div class="box" id="caja">
+          <img alt="Caja"   src="img/caja.png" />  
+        </div>
+        <div class="box center" id="aleatorios">
+          <img id=aleatorio11 alt="Bancos" src="" /> 
+        </div>
+        <div class="box center" id="bancos">
+          <img alt="Bancos" src="img/bancos.jpg" /> 
+        </div>
+        <div class="box center" id="publicidad">
+          <img alt="publicidad" src= "img/propaganda.jpg" /> 
+        </div>
+        <div class="box center" id="seguros">
+          <img alt="Bancos" src="img/fianzas.jpg" /> 
+        </div>
+        <div class="box center" id="aleatorios">
+          <img id=aleatorio10 alt="Bancos" src="" /> 
+        </div>
+        <div class="box center" id="publicidad">
+          <img alt="Bancos" src="img/publicidad.jpg" /> 
+        </div>
+        <div class="box center" id="rentasPagadas">
+          <img alt="Bancos" src="img/rentas.jpg" /> 
+        </div>
+        <div class="box center" id="impuestos">
+          <img alt="Bancos" src="img/impuestos.jpg" /> 
+        </div>
+        <div class="box center" id="interesesPagados">
+          <img alt="Bancos" src="img/intereses.jpg" /> 
+        </div>
+        <div class="box center" id="aleatorios">
+          <img id=aleatorio9 alt="Bancos" src="" /> 
+        </div>
+        <div class="box center" id="impuestos">
+          <img alt="Bancos" src="img/derechos.jpg" /> 
+        </div>
+        <div class="box center" id="seguros">
+          <img alt="Bancos" src="img/seguros.jpg" /> 
+        </div>
+        <div class="box center" id="papeleria">
+          <img alt="Bancos" src="img/papeleria.jpg" /> 
+        </div>
+        <div class="box center" id="aleatorios">
+          <img id=aleatorio8 alt="Bancos" src="" /> 
+        </div>
+        <div class="box center" id="aleatorios">
+          <img id=aleatorio7 alt="Bancos" src="" /> 
+        </div>
+        <div class="box center" id="aleatorios">
+          <img id=aleatorio6 alt="Bancos" src="" /> 
+        </div>
+        <div class="box" id="antiProveedores">
+          <img alt="Maquinaría" src="img/proveecdores.png" /> 
+        </div>          
+        <div class="box dummy"></div>
+      </div>
+    </section>
+    <section class="contenedorJuego">
+      <section class="columnaIzquierda">
+        <section class="container2">   
+          <div>              
+            <div class=  "anotherCaja" >CAJA </div>
+            <div class=  "cajaX" id="caja"></div>
+          </div>  
+          <div>              
+            <div class=  "anotherCaja" >BANCOS</div>
+            <div class=  "cajaX" id="bancos"> </div>
+          </div>
+          <div>              
+            <div class=  "anotherCaja" >ANTICIPO A PROVEEDORES</div>
+            <div class=  "cajaX" id="antiProveedores"> </div>
+          </div>  
+          <div>              
+            <div class=  "anotherCaja" >PAPELERÍA Y ARTÍCULOS DE ESCRITORIO</div>
+            <div class=  "cajaX" id="papeleria"> </div>
+          </div>  
+          <div>              
+            <div class=  "anotherCaja" >PROPAGANDA Y PUBLICIDAD</div>
+            <div class=  "cajaX" id="publicidad"> </div>
+          </div> 
+          <div>              
+            <div class=  "anotherCaja" >SEGUROS Y FIANZAS</div>
+            <div class=  "cajaX" id="seguros"> </div>
+          </div>
+          <div>              
+            <div class=  "anotherCaja" >RENTAS PAGADAS POR ANTICIPADO</div>
+            <div class=  "cajaX" id="rentasPagadas"> </div>
+          </div>
+          <div>              
+            <div class=  "anotherCaja" >INTERESES PAGADOS POR ANTICIPADO</div>
+            <div class=  "cajaX" id="interesesPagados"> </div>
+          </div>
+          <div>              
+            <div class=  "anotherCaja" >IMPUESTOS Y DERECHOS</div>
+            <div class=  "cajaX" id="impuestos"> </div>
+          </div>         
+        </section>
+      </section>
+      <section class="columnaDerecha"> 
+        <a href="javascript:activosCirculantes()" >
+          <div class="contenedorBotonActual" background-color="rgba(255, 255, 255, 0.5)" onmouseover="this.style.backgroundColor='rgba(0, 0, 0, 0.5)'" onmouseout="this.style.backgroundColor='rgb(16, 46, 180)'"> ACTIVOS CIRCULANTES</div>
+        </a>
+        <a href="javascript:activosNoCirculantes()" >
+          <div class="contenedorBoton" onmouseover="this.style.backgroundColor='rgba(0, 0, 0, 0.5)'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.5)'"> ACTIVOS NO CIRCULANTES</div>
+        </a>
+        <a href="javascript:pasivos()" >
+          <div class="contenedorBoton" onmouseover="this.style.backgroundColor='rgba(0, 0, 0, 0.5)'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.5)'"> PASIVOS </div>
+        </a>
+        <a href="javascript:capital()" >
+          <div class="contenedorBoton" onmouseover="this.style.backgroundColor='rgba(0, 0, 0, 0.5)'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.5)'"> CAPITAL CONTABLE </div>
+        </a>
+      </section>
+    </section>   
+    <script src = "js/slider.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src ="js/activosCirculantes.js"></script>
+  </body>
+</html>
